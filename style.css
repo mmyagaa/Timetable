@@ -1,0 +1,48 @@
+.timetable
+{
+	width: 100%;
+}
+
+.timetable thead th
+{
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 10px 15px 12px;
+}
+
+.timetable th, 
+.timetable td:first-child {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.timetable tbody tr:nth-child(odd){
+	background: #e8e8e8;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.timetable td
+{
+	width: 12.5%;
+	min-height: 30px;
+	text-align: center
+}
+
+.timetable .event {
+	background-color: #3156A3;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	line-height: 140%;
+	cursor: pointer;
+}
+
+.timetable .event:hover,
+.timetable .event:focus {
+	background-color: #42B3E5;
+}
+
+.timetable .event .event-container{
+	padding: 10px 15px 12px;
+}
