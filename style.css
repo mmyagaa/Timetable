@@ -46,3 +46,46 @@
 .timetable .event .event-container{
 	padding: 10px 15px 12px;
 }
+
+/* Desktop and bigger */
+@media (min-width: 960px) {
+  .uk-visible-small {
+    display: none !important;
+  }
+  .uk-visible-medium {
+    display: none !important;
+  }
+  .uk-hidden-large {
+    display: none !important;
+  }
+}
+/* Only tablets portrait */
+@media (min-width: 768px) and (max-width: 959px) {
+  .uk-visible-small {
+    display: none !important;
+  }
+  .uk-visible-large {
+    display: none !important ;
+  }
+  .uk-hidden-medium {
+    display: none !important;
+  }
+}
+/* Phone landscape and smaller */
+@media (max-width: 767px) {
+  .uk-visible-medium {
+    display: none !important;
+  }
+  .uk-visible-large {
+    display: none !important;
+  }
+  .uk-hidden-small {
+    display: none !important;
+  }
+}
+
+/* Remove from the flow and screen readers on any device */
+.uk-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
